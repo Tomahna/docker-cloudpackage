@@ -8,4 +8,5 @@ ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
 ENV LANGUAGE=C.UTF-8
 
-RUN gem install package_cloud
+RUN gem update bundler && \
+	gem install package_cloud
